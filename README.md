@@ -2,7 +2,6 @@
 
 This project is a Reddit bot that uses the **Groq AI API** to generate and post engaging content to Reddit automatically. It includes features such as daily scheduled posts, error handling, and optional comment generation.
 
-![](image.png)
 ![Sample Reddit Post](https://github.com/user-attachments/assets/f7784c35-390f-4066-8080-3e1c9bb53e52)
 
 
@@ -30,7 +29,24 @@ This project is a Reddit bot that uses the **Groq AI API** to generate and post 
 ---
 
 ## **Project Structure**
-RedditAIBot/ ├── config/ │ ├── .env # Environment variables │ ├── settings.py # Project settings ├── docs/ # Documentation ├── logs/ # Log files ├── src/ # Source code │ ├── init.py # Module initialization │ ├── bot.py # Main bot functionality │ ├── groq_api.py # Groq API integration │ ├── reddit_api.py # Reddit API integration │ ├── scheduler.py # Scheduler for posting ├── tests/ # Test cases │ ├── test_bot.py # Tests for the bot ├── README.md # Project documentation ├── requirements.txt # Python dependencies ├── venv/ # Virtual environment
+RedditAIBot/
+├── config/
+│   ├── .env               # Environment variables
+│   ├── settings.py        # Project settings
+├── docs/                  # Documentation
+├── logs/                  # Log files
+├── src/                   # Source code
+│   ├── __init__.py        # Module initialization
+│   ├── bot.py             # Main bot functionality
+│   ├── groq_api.py        # Groq API integration
+│   ├── reddit_api.py      # Reddit API integration
+│   ├── scheduler.py       # Scheduler for posting
+├── tests/                 # Test cases
+│   ├── test_bot.py        # Tests for the bot
+├── README.md              # Project documentation
+├── requirements.txt       # Python dependencies
+├── venv/                  # Virtual environment
+
 
 ## Setup Instructions
 
@@ -39,22 +55,26 @@ RedditAIBot/ ├── config/ │ ├── .env # Environment variables │ �
    ```bash
    git clone <repository_url>
    cd RedditAIBot
-Set up a Virtual Environment
+   ```
+2. **Set up a Virtual Environment**
 
-Bash
+```bash
 
-python -m venv venv
-source venv/bin/activate    # On Linux/Mac
-venv\Scripts\activate       # On Windows
-Install Dependencies
+  python -m venv venv
+  source venv/bin/activate    # On Linux/Mac
+  venv\Scripts\activate       # On Windows
+```
+3. **Install Dependencies**
 
-Bash
+```bash
 
-pip install -r requirements.txt
-Configure Environment Variables
+  pip install -r requirements.txt
+```
+4. Configure Environment Variables
+  
+  Create a .env file in the config directory with the following values:
 
-Create a .env file in the config directory with the following values:
-
+```bash
 Code snippet
 
 REDDIT_CLIENT_ID=<your_reddit_client_id>
@@ -63,12 +83,14 @@ REDDIT_USERNAME=<your_reddit_username>
 REDDIT_PASSWORD=<your_reddit_password>
 REDDIT_USER_AGENT=<your_reddit_user_agent>
 GROQ_API_KEY=<your_groq_api_key>
-Run the Bot
+```
 
-Bash
+5. **Run the Bot**
+
+```bash
 
 python src/bot.py
-
+```
 
 Usage
 Automated Posting: The bot posts generated content daily at the specified time.
