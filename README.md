@@ -58,59 +58,60 @@ RedditAIBot/
    ```
 2. **Set up a Virtual Environment**
 
-```bash
-
+  ```bash
   python -m venv venv
   source venv/bin/activate    # On Linux/Mac
   venv\Scripts\activate       # On Windows
-```
+  ```
 3. **Install Dependencies**
 
-```bash
-
+  ```bash
   pip install -r requirements.txt
-```
+  ```
 4. Configure Environment Variables
   
   Create a .env file in the config directory with the following values:
 
-```bash
-Code snippet
+  ```bash
+  Code snippet
 
-REDDIT_CLIENT_ID=<your_reddit_client_id>
-REDDIT_CLIENT_SECRET=<your_reddit_client_secret>
-REDDIT_USERNAME=<your_reddit_username>
-REDDIT_PASSWORD=<your_reddit_password>
-REDDIT_USER_AGENT=<your_reddit_user_agent>
-GROQ_API_KEY=<your_groq_api_key>
-```
+  REDDIT_CLIENT_ID=<your_reddit_client_id>
+  REDDIT_CLIENT_SECRET=<your_reddit_client_secret>
+  REDDIT_USERNAME=<your_reddit_username>
+  REDDIT_PASSWORD=<your_reddit_password>
+  REDDIT_USER_AGENT=<your_reddit_user_agent>
+  GROQ_API_KEY=<your_groq_api_key>
+  ```
 
 5. **Run the Bot**
 
-```bash
+  ```bash
 
-python src/bot.py
-```
+  python src/bot.py
+  ```
 
-Usage
-Automated Posting: The bot posts generated content daily at the specified time.
-Logging: All activities are logged in the logs/bot.log file.
-Testing: Run the test cases using:
-Bash
+## **Usage**
+  - Automated Posting: The bot posts generated content daily at the specified time.
+  - Logging: All activities are logged in the logs/bot.log file.
+  - Testing: Run the test cases using:
 
-python -m unittest discover tests
-Sample Output
-Log File (bot.log):
+  ```bash
+  python -m unittest discover tests
+  ```
 
-2025-01-17 09:56:00,866 - INFO - Logging initialized successfully.
-2025-01-17 09:56:00,866 - INFO - Starting Reddit AI Bot.
-2025-01-17 09:56:01,822 - INFO - Scheduled task set at 10:00 AM daily.
-2025-01-17 10:00:02,300 - INFO - Post submitted successfully to r/test with ID: abcd1234
-Reddit Post:
+## **Sample Output**
+  ***Log File (bot.log)***:
 
-Title: 5 Ways to Stay Productive
+  - 2025-01-17 09:56:00,866 - INFO - Logging initialized successfully.
+  - 2025-01-17 09:56:00,866 - INFO - Starting Reddit AI Bot.
+  - 2025-01-17 09:56:01,822 - INFO - Scheduled task set at 10:00 AM daily.
+  - 2025-01-17 10:00:02,300 - INFO - Post submitted successfully to r/test with ID: abcd1234
 
-Body:
+## **Reddit Post**:
+
+### **Title: 5 Ways to Stay Productive**
+
+## **Body**:
 
 Here are 5 tips to boost your productivity:
 
@@ -119,13 +120,16 @@ Here are 5 tips to boost your productivity:
 3. Take breaks.
 4. Use tools like Trello.
 5. Stay consistent.
-Troubleshooting
-FileNotFoundError: Ensure that the logs/ directory exists before running the bot.
-API Errors: Verify your API keys and network connectivity.
-Permission Errors: Check Reddit API credentials and ensure the bot has appropriate permissions for the subreddit.
-Future Improvements
-Add advanced content customization.
-Support multiple subreddits.
-Enhance comment generation logic.
-Contributors
-Your Name (Developer)
+
+## **Troubleshooting**
+  - **FileNotFoundError**: Ensure that the logs/ directory exists before running the bot.
+  - **API Errors**: Verify your API keys and network connectivity.
+  - **Permission Errors**: Check Reddit API credentials and ensure the bot has appropriate permissions for the subreddit.
+
+## **Future Improvements**
+  - Add advanced content customization.
+  - Support multiple subreddits.
+  - Enhance comment generation logic.
+
+## **Contributors**
+Ashish Gusain(Developer)
