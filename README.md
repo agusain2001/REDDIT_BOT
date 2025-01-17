@@ -2,7 +2,9 @@
 
 This project is a Reddit bot that uses the **Groq AI API** to generate and post engaging content to Reddit automatically. It includes features such as daily scheduled posts, error handling, and optional comment generation.
 
-![Sample Reddit Post](image.png)
+![](image.png)
+![Sample Reddit Post](https://github.com/user-attachments/assets/f7784c35-390f-4066-8080-3e1c9bb53e52)
+
 
 ---
 
