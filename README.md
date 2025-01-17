@@ -29,6 +29,7 @@ This project is a Reddit bot that uses the **Groq AI API** to generate and post 
 ---
 
 ## **Project Structure**
+```
 RedditAIBot/
 ├── config/
 │   ├── .env               # Environment variables
@@ -46,7 +47,7 @@ RedditAIBot/
 ├── README.md              # Project documentation
 ├── requirements.txt       # Python dependencies
 ├── venv/                  # Virtual environment
-
+```
 
 ## Setup Instructions
 
